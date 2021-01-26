@@ -1,0 +1,23 @@
+.login-button
+  display: flex
+  align-items: center
+  height: 34px
+  margin-right: 20px
+  background: #fff
+  color: $primary-color
+  position: relative
+  box-sizing: border-box
+  border: 2px solid transparent
+  background-clip: padding-box
+
+.login-button::before
+  content: ""
+  position: absolute
+  margin: -2px
+  top: 0px
+  bottom: 0px
+  left: 0px
+  right: 0px
+  background: $primary-gradient
+  border-radius: inherit
+  z-index: -1

@@ -1,0 +1,17 @@
+{
+  "name": "toxin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/main.pug",
+    "build": "parcel build ./src/main.pug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pug": "^3.0.0",
+    "sass": "^1.32.5"
+  }
+}
