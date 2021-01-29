@@ -13,5 +13,8 @@
   "devDependencies": {
     "pug": "^3.0.0",
     "sass": "^1.32.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
   }
 }
