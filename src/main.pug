@@ -18,17 +18,17 @@ html(lang="ru")
           .landing__search
             h1.section__title.landing__title Найдём номера под ваши пожелания
             form.form.landing__form
-              .form__group
+              .form__group.landing__group
                 label.label.label__text(for="arrival") Прибытие
-                input.landing__input.form__input(name="arrival" id="arrival")
-              .form__group
+                input.landing__input.form__input(name="arrival" id="arrival" type="")
+              .form__group.landing__group
                 label.label.label__text(for="departure") Выезд
-                input.landing__input.form__input(name="departure" id="departure")
-              .form__group
+                input.landing__input.form__input(name="departure" id="departure" type="")
+              .form__group.landing__group
                 label.label.label__text(for="guests") Гости
-                input.landing__input.form__input(name="guests" id="guests")
-              button.button.form__button Подобрать номер
+                input.landing__input.form__input(name="guests" id="guests" type="")
+              button.button.form__button.landing__button Подобрать номер
             
-          p.section__text.landing__text Лучшие номера для вашей работы,  отдыха  и просто вдохновения
+          p.section__text.landing__text Лучшие  номера для вашей работы, отдыха и просто вдохновения
 
     include ./blocks/footer/footer.pug
