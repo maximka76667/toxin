@@ -5,13 +5,18 @@ header.header
       ul.menu__list
         li.menu__item
           a.menu__link(href="#") О нас
-        li.menu__item
-          a.menu__link(href="#") Услуги
+        li.menu__item.dropdown
+          a.menu__link.dropdown__link(href="#") Услуги
         li.menu__item
           a.menu__link(href="#") Вакансии
         li.menu__item
           a.menu__link(href="#") Новости
-        li.menu__item
-          a.menu__link(href="#") Соглашения
+        li.menu__item.dropdown
+          a.menu__link.dropdown__link(href="#") Соглашения
+          .dropdown__content
+            a.dropdown__item Go
+            a.dropdown__item Bo
+            a.dropdown__item Lo
+
     button.button.header__button.login-button Войти
     button.button.header__button.register-button Зарегистрироваться

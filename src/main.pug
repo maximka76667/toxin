@@ -5,7 +5,30 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="./css/main.css")
     title Toxin
+    script(src="../node_modules/@fortawesome/fontawesome-free/js/brands.js")
+    script(src="../node_modules/@fortawesome/fontawesome-free/js/solid.js")
+    script(src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js")
   body.page
     include ./blocks/header/header.pug
+
+    main.content
+      section.landing
+        img.landing__background(src="./images/landing-image.jpg", alt="Фон лэндинга")
+        .container.landing__container
+          .landing__search
+            h1.section__title.landing__title Найдём номера под ваши пожелания
+            form.form.landing__form
+              .form__group.landing__group
+                label.label.label__text(for="arrival") Прибытие
+                input.landing__input.form__input(name="arrival" id="arrival" type="")
+              .form__group.landing__group
+                label.label.label__text(for="departure") Выезд
+                input.landing__input.form__input(name="departure" id="departure" type="")
+              .form__group.landing__group
+                label.label.label__text(for="guests") Гости
+                input.landing__input.form__input(name="guests" id="guests" type="")
+              button.button.form__button.landing__button Подобрать номер
+            
+          p.section__text.landing__text Лучшие  номера для вашей работы, отдыха и просто вдохновения
 
     include ./blocks/footer/footer.pug
