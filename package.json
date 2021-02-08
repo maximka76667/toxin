@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/main.pug",
-    "build": "parcel build ./src/main.pug"
+    "dev": "concurrently --kill-others \"parcel ./src/pages/uikit.pug\" \"sass --watch ./src/sass/uikit.sass ./src/css/uikit.css\"",
+    "build": "parcel build ./src/pages/uikit.pug"
   },
   "keywords": [],
   "author": "",

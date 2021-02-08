@@ -3,17 +3,17 @@ html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="./css/main.css")
+    link(rel="stylesheet", href="../css/main.css")
     title Toxin
-    script(src="../node_modules/@fortawesome/fontawesome-free/js/brands.js")
-    script(src="../node_modules/@fortawesome/fontawesome-free/js/solid.js")
-    script(src="../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js")
+    script(src="../../node_modules/@fortawesome/fontawesome-free/js/brands.js")
+    script(src="../../node_modules/@fortawesome/fontawesome-free/js/solid.js")
+    script(src="../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js")
   body.page
-    include ./blocks/header/header.pug
+    include ../blocks/header/header.pug
 
     main.content
       section.landing
-        img.landing__background(src="./images/landing-image.jpg", alt="Фон лэндинга")
+        img.landing__background(src="../images/landing-image.jpg", alt="Фон лэндинга")
         .container.landing__container
           .landing__search
             h1.section__title.landing__title Найдём номера под ваши пожелания
@@ -31,4 +31,4 @@ html(lang="ru")
             
           p.section__text.landing__text Лучшие  номера для вашей работы, отдыха и просто вдохновения
 
-    include ./blocks/footer/footer.pug
+    include ../blocks/footer/footer.pug

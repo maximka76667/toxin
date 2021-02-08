@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/@fortawesome/fontawesome-free/js/solid.js":[function(require,module,exports) {
+})({"../../node_modules/@fortawesome/fontawesome-free/js/solid.js":[function(require,module,exports) {
 /*!
  * Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -1246,7 +1246,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     defineIcons('fas', icons);
   });
 })();
-},{}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1274,7 +1274,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64879" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65085" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -1450,5 +1450,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../node_modules/@fortawesome/fontawesome-free/js/solid.js"], null)
-//# sourceMappingURL=/solid.d6b243cb.js.map
+},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../../node_modules/@fortawesome/fontawesome-free/js/solid.js"], null)
+//# sourceMappingURL=/solid.86ce834c.js.map

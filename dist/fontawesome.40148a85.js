@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js":[function(require,module,exports) {
+})({"../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js":[function(require,module,exports) {
 var global = arguments[3];
 function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function (obj) { return typeof obj; }; } else { _typeof2 = function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
@@ -2634,7 +2634,7 @@ function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "funct
 
   bunker(bootstrap);
 })();
-},{}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2662,7 +2662,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64879" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65085" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -2838,5 +2838,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"], null)
-//# sourceMappingURL=/fontawesome.bd9656ef.js.map
+},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../../node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"], null)
+//# sourceMappingURL=/fontawesome.40148a85.js.map

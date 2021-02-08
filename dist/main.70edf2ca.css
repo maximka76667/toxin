@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Montserrat";
-  src: url(/Montserrat-Regular.44e710c1.ttf);
+  src: url(/Montserrat-Regular.44240835.ttf);
   font-weight: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(/Montserrat-Bold.f3410305.ttf);
+  src: url(/Montserrat-Bold.361393eb.ttf);
   font-weight: bold;
 }
 .page {
@@ -37,7 +37,7 @@
   display: block;
   width: 105.6px;
   height: 40px;
-  background: url(/logo.236e4034.svg);
+  background: url(/logo.f3865969.svg);
 }
 
 .menu {
@@ -296,4 +296,4 @@
 
 
 
-/*# sourceMappingURL=/main.c52e0fe2.css.map */
+/*# sourceMappingURL=/main.70edf2ca.css.map */
