@@ -22,5 +22,67 @@ html(lang="en")
       p.text Main text
       
     section.form-elements
-      
+      .form__item
+        label.label__text.form__label(for="default") Text Input
+        input.form__input(id="default", type="text", placeholder="Default")
+          
+      .form__item
+        label.label__text.form__label(for="focus") Text Input
+        input.form__input.text(id="focus",type="text", placeholder="Hover/Focus", value="This is pretty awesome")
+  
+      .form__item
+        label.label__text.form__label(for="dropdown") Dropdown
+        select.form__input.dropdown(id="dropdown")
+          option 123
+  
+      .form__item
+        label.label__text.form__label(for="masked") Masked
+        input.form__input(id="masked", type="text", placeholder="Masked",   disabled)
+
+      .form__group.form__group_type_date-dropdown
+        .form__item
+          label.label__text.form__label(for="date-dropdown_empty") Date dropdown
+          input.form__input.dropdown.dropdown_type_date(id="date-dropdown_empty",   type="date")
+        .form__item
+          label.label__text.form__label(for="date-dropdown") Date dropdown
+          input.form__input.dropdown.dropdown_type_date(id="date-dropdown",   type="date")
+
+      .form__item
+        label.label__text.form__label(for="filter-date-dropdown") Filter date dropdown
+        input.form__input.dropdown.dropdown_type_filter-date(id="filter-date-dropdown", type="date")
+
+      .form__item
+        label.label__text.form__label(for="") Subscription text field
+        input.form__input.form__input_type_email(id="", type="email", placeholder="Email")
+        button.form__submit-button(type="submit") >
+
+      .form__item
+        h3.label__text Checkbox Buttons
+        .form__group.form__group_type_checkbox
+          input.form__checkbox(name="" type="checkbox" id="")
+          label.text(for="") Можно курить
+        .form__group.form__group_type_checkbox
+          input.form__checkbox(name="" type="checkbox" id="")
+          label.text(for="") Можно с питомцами
+        .form__group.form__group_type_checkbox
+          input.form__checkbox(name="" type="checkbox" id="")
+          label.text(for="") Можно пригласить гостей (до 10 человек)
+
+      .form__item
+        .form__group.form__group_type_radio
+          input.form__radio(name="gender", type="radio", id="male")
+          label.text(for="male") Мужчина
+          input.form__radio(name="gender", type="radio", id="female")
+          label.text(for="female") Женщина
+
+      .form__item
+        h3.label__text Buttons
+        button.button Click me
+        button.button Click me
+        button.button.button_type_white Click me
+        button.button.button_type_white Click me
+        button.button.button_type_transparent Click me
+        button.button.button_type_transparent Click me
+
+    section.headers
     include ../blocks/header/header.pug

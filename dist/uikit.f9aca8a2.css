@@ -207,6 +207,178 @@ section {
   color: rgba(31, 32, 65, 0.75);
 }
 
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__group .form__item {
+  margin-right: 20px;
+}
+
+.form__group_type_checkbox .text {
+  margin-bottom: 10px;
+}
+
+.form__group_type_radio .text {
+  margin: 0 20px 0 10px;
+}
+
+.form__input {
+  height: 44px;
+  width: 320px;
+  margin: 0;
+  padding: 13px 15px;
+  border: 0;
+  box-sizing: border-box;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.75);
+  position: relative;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.form__input::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.form__input:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.form__input:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.form__input:hover,
+.form__input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.75);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: 0;
+}
+
+.form__label {
+  margin-bottom: 5px;
+}
+
+.dropdown:after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: ">";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+}
+
+.dropdown_type_date {
+  width: 150px;
+}
+
+.dropdown_type_filter-date {
+  width: 267px;
+}
+
+.form__input:disabled {
+  background-color: transparent;
+}
+
+.form__submit-button {
+  width: 267px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: 0;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 2px 10px 0 0;
+}
+
+.form__checkbox + .text {
+  max-width: 200px;
+}
+
+.form__radio {
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+}
+
+.button {
+  outline: 0;
+  border: 0;
+  padding: 15px 20px;
+  margin: 0;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: bold;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  height: 44px;
+  border-radius: 22px;
+  color: #fff;
+}
+
+.button_type_white {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  color: #BC9CFF;
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.button_type_white::before {
+  content: "";
+  position: absolute;
+  margin: -2px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.button_type_transparent {
+  background: transparent;
+}
+
 
 
 
