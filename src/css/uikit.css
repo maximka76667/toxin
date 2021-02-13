@@ -354,12 +354,14 @@ section {
 .button_type_white {
   display: flex;
   align-items: center;
-  background: #fff;
-  color: #BC9CFF;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
   box-sizing: border-box;
   border: 2px solid transparent;
   background-clip: padding-box;
+  z-index: 1;
 }
 
 .button_type_white::before {
@@ -375,8 +377,41 @@ section {
   z-index: -1;
 }
 
+.button_type_white::after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: inherit;
+}
+
 .button_type_transparent {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form__cost-range {
+  margin: 0 0 0 auto;
+}
+
+.form__input_type_range {
+  -webkit-appearance: none;
+  width: 100%;
   background: transparent;
+}
+
+.form__input_type_range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=uikit.css.map */
