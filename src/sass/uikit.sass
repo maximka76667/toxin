@@ -22,6 +22,9 @@
 section
   padding: 50px
 
+.colors
+  display: flex
+
 .color
   width: 50px
   height: 50px
@@ -58,6 +61,7 @@ section
   font-size: 24px
   line-height: 29px
   color: $dark-100
+  margin: 0
 
 .section__title
   font-family: 'Montserrat'
@@ -66,6 +70,7 @@ section
   font-size: 19px
   line-height: 23px
   color: $dark-100
+  margin: 0
 
 .label__text
   font-family: 'Montserrat'
@@ -75,6 +80,7 @@ section
   line-height: 15px
   text-transform: uppercase
   color: $dark-100
+  margin: 0
 
 .text
   font-family: 'Montserrat'
@@ -83,6 +89,7 @@ section
   font-size: 14px
   line-height: 24px
   color: $dark-75
+  margin: 0
 
 // Form elements
 
@@ -112,6 +119,22 @@ section
   margin: 0 20px 0 10px
 
 .form__input
+  // height: 44px
+  // width: 320px
+  // margin: 0
+  // padding: 13px 15px
+  // border: 0
+  // box-sizing: border-box
+  // border: 1px solid $dark-25
+  // border-radius: 4px
+  // font-family: 'Montserrat'
+  // font-weight: normal
+  // font-size: 14px
+  // line-height: 18px
+  // color: $dark-75
+  // position: relative
+
+.form__input_type_text
   height: 44px
   width: 320px
   margin: 0
@@ -149,6 +172,22 @@ section
 .form__label
   margin-bottom: 5px
 
+.form__input_type_dropdown
+  height: 44px
+  width: 320px
+  margin: 0
+  padding: 13px 15px
+  border: 0
+  box-sizing: border-box
+  border: 1px solid $dark-25
+  border-radius: 4px
+  font-family: 'Montserrat'
+  font-weight: normal
+  font-size: 14px
+  line-height: 18px
+  color: $dark-75
+  position: relative
+
 .dropdown:after
   display: flex
   justify-content: center
@@ -182,15 +221,38 @@ section
   background: transparent
   border: 0
 
-.form__checkbox
+.form__input_type_checkbox
   width: 20px
   height: 20px
   margin: 2px 10px 0 0
+  position: absolute
+  z-index: -1
+  opacity: 0
 
-.form__checkbox + .text
+.form__input_type_checkbox + .text
   max-width: 200px
 
-.form__radio
+.form__input_type_checkbox + .text::before
+  content: ''
+  display: inline-block
+  width: 20px
+  height: 20px
+  margin: 2px 10px 0 0
+  flex-shrink: 0
+  flex-grow: 0
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: 50% 50%
+  background: #fff
+  border: 1px solid $dark-25
+  box-sizing: border-box
+  border-radius: 4px
+
+.form__input_type_checkbox:checked + .text::before
+  background: url(../images/checkbox-checked-icon.svg) 50% 3px no-repeat
+  border: 1px solid #BC9CFF
+
+.form__input_type_radio
   margin: auto 0
   width: 20px
   height: 20px
@@ -207,7 +269,6 @@ section
   height: 44px
   border-radius: 22px
   color: #fff
-
 
 .button_type_white
   display: flex
@@ -248,6 +309,8 @@ section
   background: $primary-gradient
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+
+.form__input_type_
 
 .form__cost-range
   margin: 0 0 0 auto

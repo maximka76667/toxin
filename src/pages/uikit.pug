@@ -5,6 +5,8 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="../css/uikit.css")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet")
     title Document
   body.page
     section.colors
@@ -24,55 +26,55 @@ html(lang="en")
     section.form-elements
       .form__item
         label.label__text.form__label(for="default") Text Input
-        input.form__input(id="default", type="text", placeholder="Default")
+        input.form__input.form__input_type_text.text(id="default", type="text", placeholder="Default")
           
       .form__item
         label.label__text.form__label(for="focus") Text Input
-        input.form__input.text(id="focus",type="text", placeholder="Hover/Focus", value="This is pretty awesome")
+        input.form__input.form__input_type_text.text(id="focus",type="text", placeholder="Hover/Focus", value="This is pretty awesome")
   
       .form__item
         label.label__text.form__label(for="dropdown") Dropdown
-        select.form__input.dropdown(id="dropdown")
+        select.form__input.form__input_type_dropdown(id="dropdown")
           option 123
   
       .form__item
         label.label__text.form__label(for="masked") Masked
-        input.form__input(id="masked", type="text", placeholder="Masked",   disabled)
+        input.form__input.form__input_type_text(id="masked", type="text", placeholder="Masked",   disabled)
 
       .form__group.form__group_type_date-dropdown
         .form__item
           label.label__text.form__label(for="date-dropdown_empty") Date dropdown
-          input.form__input.dropdown.dropdown_type_date(id="date-dropdown_empty",   type="date")
+          input.form__input.form__input_type_dropdown.dropdown_type_date(id="date-dropdown_empty",   type="date")
         .form__item
           label.label__text.form__label(for="date-dropdown") Date dropdown
-          input.form__input.dropdown.dropdown_type_date(id="date-dropdown",   type="date")
+          input.form__input.form__input_type_dropdown.dropdown_type_date(id="date-dropdown",   type="date")
 
       .form__item
         label.label__text.form__label(for="filter-date-dropdown") Filter date dropdown
-        input.form__input.dropdown.dropdown_type_filter-date(id="filter-date-dropdown", type="date")
+        input.form__input.form__input_type_dropdown.dropdown_type_filter-date(id="filter-date-dropdown", type="date")
 
       .form__item
         label.label__text.form__label(for="") Subscription text field
-        input.form__input.form__input_type_email(id="", type="email", placeholder="Email")
+        input.form__input.form__input_type_text(id="", type="email", placeholder="Email")
         button.form__submit-button(type="submit") >
 
       .form__item
         h3.label__text Checkbox Buttons
         .form__group.form__group_type_checkbox
-          input.form__checkbox(name="" type="checkbox" id="")
-          label.text(for="") Можно курить
+          input.form__input.form__input_type_checkbox(name="smoking" type="checkbox" id="smoking")
+          label.text(for="smoking") Можно курить
         .form__group.form__group_type_checkbox
-          input.form__checkbox(name="" type="checkbox" id="")
-          label.text(for="") Можно с питомцами
+          input.form__input.form__input_type_checkbox(name="pets" type="checkbox" id="pets")
+          label.text(for="pets") Можно с питомцами
         .form__group.form__group_type_checkbox
-          input.form__checkbox(name="" type="checkbox" id="")
-          label.text(for="") Можно пригласить гостей (до 10 человек)
+          input.form__input.form__input_type_checkbox(name="guests" type="checkbox" id="guests")
+          label.text(for="guests") Можно пригласить гостей (до 10 человек)
 
       .form__item
         .form__group.form__group_type_radio
-          input.form__radio(name="gender", type="radio", id="male")
+          input.form__input.form__input_type_radio(name="gender", type="radio", id="male")
           label.text(for="male") Мужчина
-          input.form__radio(name="gender", type="radio", id="female")
+          input.form__input.form__input_type_radio(name="gender", type="radio", id="female")
           label.text(for="female") Женщина
 
       .form__item
